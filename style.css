@@ -15,6 +15,15 @@
   box-sizing: border-box;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -238,6 +247,23 @@ img {
   border-top: 1px solid var(--border);
 }
 
+.feature-item h3 {
+  transition: color 0.15s ease;
+}
+
+.feature-item:hover h3 {
+  color: var(--accent);
+}
+
+.feature-icon {
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.feature-item:hover .feature-icon {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
 .feature-item:first-child {
   border-top: none;
 }
@@ -352,6 +378,11 @@ footer {
   background: var(--bg-elevated);
   border-radius: 16px;
   box-shadow: 0 10px 24px -16px rgba(34, 27, 20, 0.25);
+  transition: transform 0.15s ease;
+}
+
+.value-block:hover {
+  transform: translateY(-3px);
 }
 
 .value-block h3 {
@@ -372,6 +403,12 @@ footer {
   padding: 28px 24px;
   background: var(--bg);
   box-shadow: 0 10px 24px -18px rgba(34, 27, 20, 0.3);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px -16px rgba(34, 27, 20, 0.35);
 }
 
 .price-card.featured {
@@ -379,6 +416,10 @@ footer {
   color: var(--accent-ink);
   border-color: var(--accent);
   box-shadow: 0 16px 32px -14px rgba(194, 58, 22, 0.5);
+}
+
+.price-card.featured:hover {
+  box-shadow: 0 20px 40px -14px rgba(194, 58, 22, 0.6);
 }
 
 .price-card.featured p,
