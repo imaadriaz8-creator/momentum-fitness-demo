@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Book a Free Trial | Momentum Fitness Dubai</title>
+  <meta name="description" content="Book your free trial class at Momentum Fitness in Dubai. Studio hours, location, and a contact form — we reply within one business day.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Momentum <span>Fitness</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Open menu">&#9776;</button>
+    </div>
+    <div class="nav-mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <h1>Book your free trial class</h1>
+      <p>Fill in the form and we'll get back to you within one business day to find a class that fits your schedule.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container contact-layout">
+      <div class="contact-info">
+        <h3>Location</h3>
+        <p>Al Quoz, Dubai</p>
+
+        <h3>Hours</h3>
+        <p>Mon–Fri: 6am–9pm</p>
+        <p>Sat–Sun: 8am–4pm</p>
+
+        <h3>Email</h3>
+        <p>hello@momentumfitness.example</p>
+      </div>
+
+      <div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-field">
+            <label for="message">What are you hoping to work on?</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Request My Free Trial</button>
+        </form>
+        <div class="form-success" id="form-success">
+          <strong>Thanks — request received.</strong>
+          <p style="margin: 8px 0 0;">This demo form doesn't send real emails, but this is exactly how a real booking flow would confirm a submission.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Momentum Fitness — Dubai, UAE</p>
+      <p class="demo-note">This is a demo website built to showcase web design — not a real business.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
