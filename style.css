@@ -162,20 +162,25 @@ img {
 
 /* ===== Hero ===== */
 .hero {
-  padding: 64px 0 56px;
-  text-align: center;
+  padding: 40px 0 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: center;
+  padding-bottom: 40px;
 }
 
 .hero h1 {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   margin-bottom: 0.4em;
 }
 
 .hero p {
-  font-size: 1.1rem;
-  max-width: 520px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 1.05rem;
+  max-width: 480px;
 }
 
 .hero-ctas {
@@ -183,7 +188,15 @@ img {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  align-items: center;
+}
+
+.hero-media img,
+.page-hero-media img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px -20px rgba(34, 27, 20, 0.35);
 }
 
 /* ===== Section ===== */
@@ -297,6 +310,17 @@ footer {
   max-width: 540px;
 }
 
+.page-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.page-hero-media img {
+  aspect-ratio: 16 / 10;
+}
+
 /* ===== About: stat strip + values ===== */
 .stat-strip {
   display: grid;
@@ -327,6 +351,7 @@ footer {
   padding: 24px;
   background: var(--bg-elevated);
   border-radius: 16px;
+  box-shadow: 0 10px 24px -16px rgba(34, 27, 20, 0.25);
 }
 
 .value-block h3 {
@@ -346,12 +371,14 @@ footer {
   border-radius: 16px;
   padding: 28px 24px;
   background: var(--bg);
+  box-shadow: 0 10px 24px -18px rgba(34, 27, 20, 0.3);
 }
 
 .price-card.featured {
   background: var(--accent);
   color: var(--accent-ink);
   border-color: var(--accent);
+  box-shadow: 0 16px 32px -14px rgba(194, 58, 22, 0.5);
 }
 
 .price-card.featured p,
@@ -504,7 +531,16 @@ footer {
 
   .hero-ctas {
     flex-direction: row;
-    justify-content: center;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1.1fr 1fr;
+    gap: 56px;
+  }
+
+  .page-hero-grid {
+    grid-template-columns: 1.2fr 1fr;
+    gap: 48px;
   }
 
   .feature-layout {
