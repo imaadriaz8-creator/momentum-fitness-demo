@@ -6,6 +6,7 @@
   --text-muted: #6b5f52;
   --accent: #c23a16;
   --accent-ink: #ffffff;
+  --accent-tint: #f7e3db;
   --border: #e2d7c6;
   --max-width: 1080px;
 }
@@ -229,8 +230,20 @@ img {
 }
 
 .feature-icon {
-  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--accent-tint);
+  color: var(--accent);
   flex-shrink: 0;
+}
+
+.feature-icon svg {
+  width: 20px;
+  height: 20px;
 }
 
 .feature-item h3 {
